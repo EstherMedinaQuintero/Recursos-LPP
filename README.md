@@ -30,7 +30,13 @@ El pensamiento computacional utiliza los siguientes conceptos para resolver un p
 
 ## Práctica 9: POO. Herencia.
 
+Partiendo de la clase para representar un único ejercicio o actividad que permite la enseñanzaaprendizaje del pensamiento computacional cree una jerarquía de clases Ruby para representar recursos digitales abiertos que cuenten con un _URI (Uniform Resource Identifier)_ y una fecha de creación. Se ha de contar con un mecanismo para determinar el número de recursos que se ha instanciado. Los recursos educativos han de ser comparables según el tiempo estimado para su realización y su fecha de creación.
+
+Cree una jerarquía de clases Ruby para representar un entorno digital de recursos educativos. Se trata de una colección de recursos educativos estructurado didácticamente dirigido a facilitar el desarrollo de experiencias de aprendizaje en torno a una unidad de saber o competencia. Las colecciones han de contar como mínimo con un código para su identificación, un nombre, una categoría que indique si se trata de una lección, una unidad didáctica, un curso o un taller y finalmente, un conjunto de recursos. Además, dada una colección de recursos se ha de poder obtener el número de objetos de aprendizaje que la componen y el nivel medio de la misma.
+
 ## Práctica 10: POO. Polimorfismo.
+
+
 
 ## Práctica 11: Programación funcional. Bloques.
 
