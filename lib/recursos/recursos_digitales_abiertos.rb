@@ -1,18 +1,19 @@
 module Recursos
   
   # Recursos digitales abiertos
-  # Cuentan con un URI (Uniform Resource Identifier) y una fecha de creación. 
-  class RecursosDigitalesAbiertos < Ejercicio
+  class RecursosDigitalesAbiertos < Recurso
 
     # Getter de los nuevos atributos
     attr_reader :uri, :fecha_creacion
 
+    # Constructor de la clase RecursosDigitalesAbiertos
     def initialize(id, marca, titulo, descripcion, nivel, tipo, categoria, temp, material, conceptos, uri, fecha_creacion)
       super(id, marca, titulo, descripcion, nivel, tipo, categoria, temp, material, conceptos)
       @uri = uri
       @fecha_creacion = fecha_creacion
     end
 
+    # Método para convertir un recurso digital abierto a string
     def to_s
       super + "\nURI: #{@uri}\nFecha de creación: #{@fecha_creacion}"
     end

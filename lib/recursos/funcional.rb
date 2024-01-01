@@ -2,7 +2,6 @@
 
 module Recursos
 
-
   def self.aplicar_lori(recurso_digital_abierto, valores)
     valores
   end
@@ -33,11 +32,6 @@ module Recursos
     ejercicios_primer_grupo[1].max_by {|ejercicio| ejercicio[1].last}
   end 
 
-  # Apartado 5
-  # @brief Esta función selecciona la oferta con mayor número de objetos de aprendizaje y mejor calidad del contenido
-  # @param entornos_digitales [Array] Array de entornos digitales
-  # @param valoraciones [Array] Array de valoraciones
-  # @return [Array] Array con el entorno digital y su valoración
   def self.seleccionar_mejor_oferta(entornos_digitales, valoraciones)
     # Hacemos zip de las valoraciones
     entornos_zip = entornos_digitales.zip(valoraciones)

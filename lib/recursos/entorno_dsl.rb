@@ -5,6 +5,9 @@ module Recursos
     # Getters
     attr_reader :nombre, :entorno, :loris, :temas
 
+    # @brief Constructor de la clase EntornosDSL
+    # @param nombre : String
+    # @param bloque : Bloque
     def initialize(nombre, &bloque)
       @nombre = nombre
       @entorno = EntornoDigital.new(1, @nombre, "taller", [])

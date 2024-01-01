@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Requerimiento de archivos relativos para definir el módulo Recursos.
 require_relative "recursos/version"
 require_relative "recursos/constantes"
 require_relative "recursos/recurso"
@@ -11,12 +12,15 @@ require_relative "recursos/funcional"
 require_relative "recursos/entorno_dsl"
 
 module Recursos
+  # Definición de una clase de Error personalizada, una buena práctica en manejo de errores.
   class Error < StandardError; end
   
+  # Método para obtener la duración de un recurso.
   def self.duracion(recurso)
     return temporalizacion
   end
 
+  # Método para calcular la duración total de un entorno digital.
   def self.duracion_total(entorno_digital)
     duracion_total = 0
     entorno_digital.recursos.each do |recurso|
@@ -25,6 +29,7 @@ module Recursos
     return duracion_total
   end
 
+  # Método para crear una colección de recursos.
   def self.crear_coleccion(coleccion, recursos)
     # Al array de recursos le añadimos los recursos de la colección
     recursos1 = recursos + coleccion.recursos

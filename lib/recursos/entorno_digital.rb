@@ -1,9 +1,3 @@
-# Este módulo se ha creado para representar recursos 
-# educativos para el desarrollo del Pensamiento Computacional
-# Author::    Esther M. Quintero  (mailto:alu0101434780@ull.edu.es)
-# Copyright:: Creative Commons
-# License::   CC BY-NC-ND 4.0 
-
 module Recursos
 
   # Clase entorno digital

@@ -29,10 +29,12 @@ module Recursos
           @@num_recursos += 1
       end
 
+    # Método para obtener el número de recursos digitales abiertos
       def self.num_recursos
           @@num_recursos
       end
 
+        # Método para convertir un objeto Ejercicio a string
       def to_s
           "ID: #{@id}\nMarca: #{@marca}\nTítulo: #{@titulo}\nDescripción: #{@descripcion}\nNivel: #{@nivel}\nTipo: #{@tipo}\nCategoría: #{@categoria}\nTemporalización: #{@temp}\nMaterial: #{@material}\nConceptos: #{@conceptos}"
       end
